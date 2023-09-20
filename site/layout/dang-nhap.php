@@ -36,7 +36,7 @@
         if (loginBtn) {
             loginBtn.onclick = () => {
                 const xhr = new XMLHttpRequest(); // create new XML Object
-                xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_login", true);
+                xhr.open("POST", "./tai-khoan/dang-nhap.php?btn_login", true);
                 xhr.onload = () => {
                     if (xhr.readyState === XMLHttpRequest.DONE) {
                         if (xhr.status == 200) {

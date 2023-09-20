@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - TDK Store</title>
+    <title>Products </title>
     <link rel="stylesheet" href="../../content/css/lay-sanpham.css">
     <style>
         .coffee-container {
@@ -103,14 +103,14 @@
             </div>
             <div class="row">
                 <ul class="cate-list">
-                    <li><a class="cate-all active" href="index.php?coffee">All</a></li>
+                    <li><a class="cate-all active" href="?coffee">All</a></li>
                     <?php
                     require '../../dao/loai.php';
                     $loais = loai_select_all();
                     foreach ($loais as $loai) {
                         extract($loai)
                     ?>
-                        <li><a data-cate-id="<?= $ma_loai ?>" href="index.php?coffee&ma_loai=<?= $ma_loai ?>"><?= $ten_loai ?></a></li>
+                        <li><a data-cate-id="<?= $ma_loai ?>" href="?coffee&ma_loai=<?= $ma_loai ?>"><?= $ten_loai ?></a></li>
                     <?php } ?>
                 </ul>
             </div>
@@ -119,13 +119,13 @@
             </div>
             <div class="row">
                 <div class="sort-list">
-                    <li><a class="" data-sort-id="HTL" href="index.php?san-pham&sort=AZ">High to Low Price</a></li>
-                    <li><a data-sort-id="LTH" href="index.php?san-pham&">Low to High Price</a></li>
+                    <li><a class="" data-sort-id="HTL" href="?san-pham&sort=AZ">High to Low Price</a></li>
+                    <li><a data-sort-id="LTH" href="?san-pham&">Low to High Price</a></li>
                 </div>
             </div>
             <div class="row">
                 <div class="special-list">
-                    <li><a class="" data-sort-id="HTL" href="index.php?san-pham&sort=AZ">Special Products</a></li>
+                    <li><a class="" data-sort-id="HTL" href="?san-pham&sort=AZ">Special Products</a></li>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
         specialItem.onclick = (e) => {
             e.preventDefault()
             const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../hang-hoa/tim-kiem.php?special", true);
+            xhr.open("POST", "./hang-hoa/tim-kiem.php?special", true);
             xhr.onload = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {
@@ -199,7 +199,7 @@
                     xhr.send(); //send formData to PHP
                 } else {
                     const xhr = new XMLHttpRequest(); // create new XML Object
-                    xhr.open("GET", `../hang-hoa/tim-kiem.php?ma_loai=${cate.dataset.cateId}`, true);
+                    xhr.open("GET", `./hang-hoa/tim-kiem.php?ma_loai=${cate.dataset.cateId}`, true);
                     xhr.onload = () => {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
                             if (xhr.status == 200) {
@@ -220,7 +220,7 @@
 
                 //
                 const xhr = new XMLHttpRequest(); // create new XML Object
-                xhr.open("GET", `../hang-hoa/tim-kiem.php?sort=${sort.dataset.sortId}`, true);
+                xhr.open("GET", `./hang-hoa/tim-kiem.php?sort=${sort.dataset.sortId}`, true);
                 xhr.onload = () => {
                     if (xhr.readyState === XMLHttpRequest.DONE) {
                         if (xhr.status == 200) {

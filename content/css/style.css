@@ -176,7 +176,6 @@ nav ul li a {
   overflow: hidden;
 }
 
-
 section {
   padding: 24px;
   min-height: 100vh;
@@ -184,12 +183,13 @@ section {
 
 section .title {
   margin-bottom: 28px;
-  font-size: calc(1vw + 1vh);
   white-space: nowrap;
   color: var(--text-color);
-  text-align: left;
+  text-align: center;
   width: 100%;
   overflow: hidden;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .cate .title {

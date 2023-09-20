@@ -132,7 +132,7 @@
                 </div>
                 <div class="row">
                     <form class="logout-form" method="POST">
-                        <input type="hidden" name="btn_logoff">
+                        <input type="hidden" name="?btn_logoff">
                         <button>
                             Log Out
                         </button>
@@ -151,7 +151,7 @@
         }
         logOutBtn.onclick = () => {
             const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../tai-khoan/dang-nhap.php?btn_logoff", true);
+            xhr.open("POST", "./tai-khoan/dang-nhap.php?btn_logoff", true);
             xhr.onload = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {

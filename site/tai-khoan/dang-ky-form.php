@@ -3,7 +3,7 @@ if (strlen($MESSAGE)) {
     echo "<h5>$MESSAGE</h5>";
 }
 ?>
-<form action="dang-ky.php" method="post" enctype="multipart/form-data">
+<form action="dang-ky.php" method="post" enctype="multipart/form-data">//////xác định loại dữ liệu được sử dụng khi gửi dữ liệu từ form HTML đến máy chủ (server) khi người dùng nhấn nút "Submit".
     <input name="ma_kh" value="<?= $ma_kh ?>">
     <input name="ho_ten" value="<?= $ho_ten ?>">
     <input name="email" value="<?= $email ?>">

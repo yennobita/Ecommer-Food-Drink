@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <style>
         .bg-fixed-wrap {
             padding: 48px 0 80px;
@@ -15,105 +16,278 @@
             left: calc(-50vw + 50%);
 
         }
-
-        .bg-fixed {
+        .slider {
+            margin-bottom: 40px;
+        }
+        .mb-3 {
+            font-weight: 600;
+        }
+        .btn-bottom {
+            font-weight: 500;
+            transition: .5s;
+            border-radius: 50rem ;
+            padding-top: 0.5rem ;
+            padding-bottom: 0.5rem;
+            padding-right: 1.5rem;
+            padding-left: 1.5rem ;
+            border-width: 2px;
+            color: #3CB815;
+            border-color: #3CB815;
+            border: 1px solid ;
+        }
+        .btn-bottom:hover {
+            background: #3CB815;
+            color: #fff;
+            border: none;
+        }
+        .container-fluid{
+            border-radius: 5px;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
             width: 100%;
-            height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1647517368034-4389fcb678f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+            background: url(../../content/images/favicon_io/bg-icon.png) ;
+            background-size: contain;
         }
-        .tin{
-            
-           
-            display: flex;
+        .bg-green {
+            background: #3CB815;
         }
-        .new-1{
-            margin-left: 50px;
+        .btn-right {
+            visibility: visible;
+            animation-delay: 0.5s;
+            animation-name: fadeIn;
+            font-weight: 500;
+            transition: .5s;
+            background-color: #F65005;
+            border-color: #F65005;
         }
-        .new-1 .img{
-            width: 400px;
-            background-color: red;
-            
-        }
-        .new-1 .img img{
-            width: 400px;
-            height: 320px;
-           object-fit: cover;
-        }
-        .tin{
-            min-height: 50vh;
-        }
-        .new-1 p{
-            font-weight: inherit;
-            font-size: 20px;
-        }
-        .title{
-            margin-bottom: 28px;
-            font-size: calc(1vw + 1vh);
-            white-space: nowrap;
-            color: var(--text-color);
-            text-align: left;
-            width: 100%;
-            overflow: hidden;
-            
         
+
+     
+
+       
+        
+      
+        .display-5 {
+            font-weight: 700;
         }
     </style>
-    <title>TDK Store</title>
+    <title>hôme</title>
 </head>
 
 <body>
     <div class="slider">
         <div class="slider-img">
-            <img src="https://images.unsplash.com/photo-1561052967-61fc91e48d79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="">
         </div>
-        <div class="slider-content">
-            <h3><span class="typing">Clothes with our story</span></h3>
-            <p>visit our the best clothes shop</p>
-        </div>
+      
     </div>
     <div class="content">
         <section class="favourite">
-            <div class="row">
-                <h3 class="title">Popular</h3>
+            <div class="row" style="padding-top: 30px;">
+                <h3 class="title">Product Now</h3>
             </div>
-            <div class="row">
+            <div class="row" style="padding-top: 50px;">
                 <?php
                 require '../layout/top10.php';
                 ?>
             </div>
 
         </section>
-        <section class="bg-fixed-wrap">
-            <div class="bg-fixed"></div>
-        </section>
-       
-        <div class="title" style="padding-left: 40px;font-weight: 500;">
-            News
-        </div>
-        <section class="tin">
-            <div class="new-1">
-                <div class="img">
-                    <img src="https://bizweb.dktcdn.net/thumb/large/100/414/728/articles/clownz-1618.jpg?v=1610362067883" alt="">
-                </div>
-                <p>9 BEST-SELLER ITEMS OF AUGUST</p>
-            </div>
-            <div class="new-1">
-                <div class="img">
-                    <img src="https://bizweb.dktcdn.net/thumb/large/100/414/728/articles/clownz-6-427.jpg?v=1610362183260" alt="">
-                </div>
-                <p style="padding-left: 20px;">9 BEST-SELLER ITEMS OF JULY</p>
-            </div>
-            <div class="new-1">
-                <div class="img">
-                    <img src="https://bizweb.dktcdn.net/thumb/large/100/414/728/articles/untitled-session0936.jpg?v=1639477429930" alt="">
-                </div>
-                <p>SUMMER 2017 - Sự trở lại của Camo</p>
-            </div>
-        </section>
     </div>
+      
+       
+        <!-- ../ -->
+        <div class="container-xxl">
+      <div class="">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+            <div class="about-img position-relative overflow-hidden p-5 pe-0">
+              <img class="img-fluid w-100" src="../../content/images/favicon_io/about.jpg" />
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <h1 class="display-5 mb-4">Best Organic Fruits And Vegetables</h1>
+            <p class="mb-4">
+              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+              diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+              lorem sit clita duo justo magna dolore erat amet
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>Tempor erat elitr
+              rebum at clita
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>Aliqu diam amet diam
+              et eos
+            </p>
+            <p>
+              <i class="fa fa-check text-primary me-3"></i>Clita duo justo magna
+              dolore erat amet
+            </p>
+            <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href=""
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ../ -->
+    <div class="container-fluid bg-light bg-icon my-5 py-6">
+  <div class="">
+    <div
+      class="section-header text-center mx-auto mb-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      style="max-width: 500px"
+    >
+      <h1 class="display-5 mb-3">Our Features</h1>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
+        justo sed rebum vero dolor duo.
+      </p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="bg-white text-center h-100 p-4 p-xl-5">
+          <img class="img-fluid mb-4" src="../../content/images/favicon_io/icon-1.png" alt="" />
+          <h4 class="mb-3">Natural Process</h4>
+          <p class="mb-4">
+            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
+            diam justo sed vero dolor duo.
+          </p>
+          <a
+            class="btn-bottom btn-outline-primary border-2 py-2 px-4 rounded-pill"
+            href=""
+            >Read More</a
+          >
+        </div>
+    </div>
+     
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="bg-white text-center h-100 p-4 p-xl-5">
+          <img class="img-fluid mb-4" src="../../content/images/favicon_io/icon-2.png" alt="" />
+          <h4 class="mb-3">Organic Products</h4>
+          <p class="mb-4">
+            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
+            diam justo sed vero dolor duo.
+          </p>
+          <a
+            class="btn-bottom btn-outline-primary border-2 py-2 px-4 rounded-pill"
+            href=""
+            >Read More</a
+          >
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="bg-white text-center h-100 p-4 p-xl-5">
+          <img class="img-fluid mb-4" src="../../content/images/favicon_io/icon-1.png" alt="" />
+          <h4 class="mb-3">Biologically Safe</h4>
+          <p class="mb-4">
+            Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum
+            diam justo sed vero dolor duo.
+          </p>
+          <a
+            class="btn-bottom  btn-outline-primary border-2 py-2 px-4 rounded-pill"
+            href=""
+            >Read More</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ../ -->
+    <div class="container-fluid bg-green  bg-icon mt-5 py-6">
+  <div class="">
+    <div class="row g-5 align-items-center">
+      <div class="col-md-7 wow fadeIn" data-wow-delay="0.1s">
+        <h1 class="display-5 text-white mb-3">Visit Our Firm</h1>
+        <p class="text-white mb-0">
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          lorem sit clita duo justo magna dolore erat amet. Diam dolor diam
+          ipsum sit. Aliqu diam amet diam et eos.
+        </p>
+      </div>
+      <div class="col-md-5 text-md-end wow fadeIn" data-wow-delay="0.5s">
+        <a class="btn-right btn-lg btn-secondary rounded-pill py-3 px-5" href=""
+          >Visit Now</a
+        >
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- // -->
+    <div class="container-xxl py-5">
+  <div class="">
+    <div
+      class="section-header text-center mx-auto mb-5 wow fadeInUp"
+      data-wow-delay="0.1s"
+      style="max-width: 500px"
+    >
+      <h1 class="display-5 mb-3">Latest Blog</h1>
+      <p>
+        Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam
+        justo sed rebum vero dolor duo.
+      </p>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <img class="img-fluid" src="../../content/images/favicon_io/blog-1.jpg" alt="" />
+        <div class="bg-light p-4">
+          <a class="d-block h5 lh-base mb-4" href=""
+            >How to cultivate organic fruits and vegetables in own firm</a
+          >
+          <div class="text-muted border-top pt-4">
+            <small class="me-3"
+              ><i class="fa fa-user text-primary me-2"></i>Admin</small
+            >
+            <small class="me-3"
+              ><i class="fa fa-calendar text-primary me-2"></i>01 Jan,
+              2045</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <img class="img-fluid" src="../../content/images/favicon_io/blog-2.jpg" alt="" />
+        <div class="bg-light p-4">
+          <a class="d-block h5 lh-base mb-4" href=""
+            >How to cultivate organic fruits and vegetables in own firm</a
+          >
+          <div class="text-muted border-top pt-4">
+            <small class="me-3"
+              ><i class="fa fa-user text-primary me-2"></i>Admin</small
+            >
+            <small class="me-3"
+              ><i class="fa fa-calendar text-primary me-2"></i>01 Jan,
+              2045</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <img class="img-fluid" src="../../content/images/favicon_io/blog-3.jpg" alt="" />
+        <div class="bg-light p-4">
+          <a class="d-block h5 lh-base mb-4" href=""
+            >How to cultivate organic fruits and vegetables in own firm</a
+          >
+          <div class="text-muted border-top pt-4">
+            <small class="me-3"
+              ><i class="fa fa-user text-primary me-2"></i>Admin</small
+            >
+            <small class="me-3"
+              ><i class="fa fa-calendar text-primary me-2"></i>01 Jan,
+              2045</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
 </body>
+
 
 </html>

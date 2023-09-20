@@ -12,7 +12,7 @@ if (exist_param("btn_update")) {
     $email = $_POST['email'];
     $kich_hoat = $_POST['kich_hoat'];
     $vai_tro = $_POST['vai_tro'];
-    if (!empty($ma_kh) && !empty($ho_ten) && !empty($email)) {
+    if (!empty($ma_kh) && !empty($ho_ten) && !empty($email)) { //empty là kt có phải giá trị rỗng hay k
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             try {
                 khach_hang_update($ma_kh, $mat_khau, $ho_ten, $kich_hoat, $hinh1, $email, $vai_tro);

@@ -4,8 +4,8 @@
 
 function thong_ke_hang_hoa()
 {
-    $sql = "SELECT count(*) FROM hang_hoa";
-    $count = pdo_query_value($sql);
+    $sql = "SELECT count(*) FROM hang_hoa";//hàm COUNT() để đếm số lượng bản ghi tổng cộng trong bảng hang_hoa
+    $count = pdo_query_value($sql);//thực hiện truy vấn và trả về giá trị duy nhất từ kết quả truy vấn.
     return $count;
 }
 

@@ -32,7 +32,7 @@
 
 <body>
     <div class="row">
-        <form class="add-prod-form" action="index.php?btn_insert" method="post" enctype="multipart/form-data">
+        <form class="add-prod-form" action="?btn_insert" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="">Product Name</label>
                 <input type="text" name="ten_hh">
@@ -83,7 +83,7 @@
         </form>
     </div>
     <div class="row">
-        <a href="index.php?btn_list" class="btn">List</a>
+        <a href="?btn_list" class="btn">List</a>
     </div>
     <script>
         const imageUpload = document.querySelector('.image-upload'),

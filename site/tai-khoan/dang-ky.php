@@ -14,7 +14,7 @@ if (exist_param("btn_register")) {
     if (!empty($ma_kh) && !empty($mat_khau) && !empty($mat_khau2) && !empty($ho_ten) && !empty($email)) {
         if (!khach_hang_exist($ma_kh)) {
             if (preg_match("^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$^", $ma_kh)) {
-                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {//kt lọc giá trị email
                     if (preg_match("^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$^", $mat_khau)) {
                         if ($mat_khau == $mat_khau2) {
                             $file_name = save_file("up_hinh", "$IMAGE_DIR/users/");

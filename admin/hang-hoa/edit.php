@@ -45,7 +45,7 @@
 
 <body>
     <div class="row">
-        <form class="update-prod-form" action="index.php" method="post" enctype="multipart/form-data">
+        <form class="update-prod-form" action="?btn_update" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="">Product Name</label>
                 <input type="text" name="ten_hh" value='<?= $ten_hh ?>'>
@@ -102,7 +102,7 @@
         </form>
     </div>
     <div class="row">
-        <a href="index.php?btn_list" class="btn">List</a>
+        <a href="?btn_list" class="btn">List</a>
         <!-- <a href="index.php?btn_list" class="btn">list</a> -->
     </div>
     <script>

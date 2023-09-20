@@ -154,7 +154,7 @@
         }
         forgotBtn.onclick = () => {
             const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../tai-khoan/quen-mk.php?btn_forgot", true);
+            xhr.open("POST", "./tai-khoan/quen-mk.php?btn_forgot", true);
             xhr.onload = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {
@@ -181,7 +181,7 @@
         registerBtn.onclick = () => {
             if (inpPassword !== "" && inpPassword2 !== "" && inpUsername !== "" && inpEmail !== "") {
                 const xhr = new XMLHttpRequest(); // create new XML Object
-                xhr.open("POST", "../tai-khoan/dang-ky.php?btn_register", true);
+                xhr.open("POST", "./tai-khoan/dang-ky.php?btn_register", true);
                 xhr.onload = () => {
                     if (xhr.readyState === XMLHttpRequest.DONE) {
                         if (xhr.status == 200) {

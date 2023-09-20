@@ -6,7 +6,9 @@ require '../../dao/hang-hoa.php';
 extract($_REQUEST);
 // Truy vấn mặt hàng theo mã
 $hang_hoa = hang_hoa_select_by_id($ma_hh);
+///-----
 extract($hang_hoa);
+//----
 // Tăng số lượt xem lên 1
 hang_hoa_tang_so_luot_xem($ma_hh);
 // $VIEW_NAME = "hang-hoa/chi-tiet-ui.php";
@@ -20,7 +22,7 @@ hang_hoa_tang_so_luot_xem($ma_hh);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-COFFEE-Product</title>
+    <title>Detail-Product</title>
     <link rel="stylesheet" href="../../content/css/style.css">
     <link rel="stylesheet" href="../../content/css/sanpham-chitiet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,15 +108,12 @@ hang_hoa_tang_so_luot_xem($ma_hh);
                 </p>
                 <span>Size :</span>
                 <ul class="size-list">
-                    <li class="size-item">XS</li>
                     <li class="size-item">S</li>
                     <li class="size-item active">M</li>
                     <li class="size-item">L</li>
-                    <li class="size-item">XL</li>
-                    <li class="size-item">2XL</li>
-                    <li class="size-item">3XL</li>
                 </ul>
-                <!-- <p class="product-describe"></p> -->
+             
+             
 
                 <form action="" id="addcart">
                     <input type="hidden" name="ma_hh" value="<?= $ma_hh ?>">
@@ -200,7 +199,7 @@ hang_hoa_tang_so_luot_xem($ma_hh);
 
         addCartBtn.onclick = () => {
             const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../gio-hang/gio-hang.php?addcart", true);
+            xhr.open("POST", "./gio-hang/gio-hang.php?addcart", true);
             xhr.onload = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {

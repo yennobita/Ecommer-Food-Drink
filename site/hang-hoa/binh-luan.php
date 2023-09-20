@@ -20,7 +20,7 @@ if (!isset($_SESSION['user'])) {
     echo "<b>Đăng nhập để bình luận về sản phẩm này</b>";
 } else {
 ?>
-    <form action="index.php?chi-tiet&ma_hh=<?= $ma_hh ?>" method="post">
+    <form action="?chi-tiet&ma_hh=<?= $ma_hh ?>" method="post">
         <input name="noi_dung" placeholder="write a comment" /><button>Send</button>
     </form>
 <?php } ?>

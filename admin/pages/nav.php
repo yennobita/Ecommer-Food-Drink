@@ -11,37 +11,37 @@
     <div class="menu-items">
         <ul class="nav-links">
             <li>
-                <a href="../trang-chinh">
+                <a href="/admin/trang-chinh">
                 <i class="fa-solid fa-house"></i>
                     <span class="link-name">Dahsboard</span>
                 </a>
             </li>
             <li>
-                <a href="../hang-hoa">
+                <a href="/admin/hang-hoa">
                 <i class="fa-solid fa-shirt"></i>
                     <span class="link-name">Product</span>
                 </a>
             </li>
             <li>
-                <a href="../loai-hang/">
+                <a href="/admin/loai-hang/">
                 <i class="fa-solid fa-list-ul"></i>
                     <span class="link-name">Category</span>
                 </a>
             </li>
             <li>
-                <a href="../khach-hang/">
+                <a href="/admin/khach-hang/">
                 <i class="fa-solid fa-user-large"></i>
                     <span class="link-name">Customer</span>
                 </a>
             </li>
             <li>
-                <a href="../binh-luan/">
+                <a href="/admin/binh-luan/">
                 <i class="fa-solid fa-comment"></i>
                     <span class="link-name">Comments</span>
                 </a>
             </li>
             <li>
-                <a href="../don-hang/">
+                <a href="/admin/don-hang/">
                 <i class="fa-solid fa-receipt"></i>
                     <span class="link-name">Receipt</span>
                 </a>

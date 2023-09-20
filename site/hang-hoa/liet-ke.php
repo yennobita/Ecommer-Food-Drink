@@ -18,7 +18,7 @@ foreach ($items as $item) {
     extract($item);
 ?>
     <div class="grid-column prod-item">
-        <a href="index.php?chi-tiet&ma_hh=<?= $ma_hh ?>">
+        <a href="?chi-tiet&ma_hh=<?= $ma_hh ?>">
             <div class="prod-image">
                 <img src="<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>" />
                 <?php
@@ -41,7 +41,8 @@ foreach ($items as $item) {
                         ?>
                             <span class="listed-price">
                                 <del>
-                                    $<?= number_format($don_gia, 2) ?>
+                                    $<?= number_format($don_gia, 2) ?> 
+                                    <!-- dạng số thành một chuỗi có dấu phẩy để tăng tính đọc và hiểu quả của số. -->
                                 </del>
                                 <i>$<?= number_format($don_gia - (($don_gia * $giam_gia) / 100), 2) ?></i>
                             </span>

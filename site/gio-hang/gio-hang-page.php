@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= $CONTENT_URL ?>/css/style.css">
     <link rel="stylesheet" href="<?= $CONTENT_URL ?>/css/gio-hang.css">
-    <title>Cart - TDK Store</title>
+    <title>Cart</title>
     <style>
     </style>
 </head>
@@ -47,7 +47,7 @@
                                             if ($giam_gia > 0) {
                                             ?>
                                                 <div class="cart-prod-sale">
-                                                    <span>
+                                                    <span> 
                                                         -<?= $giam_gia ?>%
                                                     </span>
                                                 </div>
@@ -142,7 +142,7 @@
                     prod.querySelector('.quantityInp').value === 1;
                 } else {
                     const xhr = new XMLHttpRequest(); // create new XML Object
-                    xhr.open("POST", "../gio-hang/gio-hang.php?updateqty", true);
+                    xhr.open("POST", "./gio-hang/gio-hang.php?updateqty", true);
                     xhr.onload = () => {
                         if (xhr.readyState === XMLHttpRequest.DONE) {
                             if (xhr.status == 200) {
@@ -169,7 +169,7 @@
             // DELETE PRODUCT IN CART
             prod.querySelector('.delete-prod').onclick = () => {
                 const xhr = new XMLHttpRequest(); // create new XML Object
-                xhr.open("POST", "../gio-hang/gio-hang.php?delcart", true);
+                xhr.open("POST", "./gio-hang/gio-hang.php?delcart", true);
                 xhr.onload = () => {
                     if (xhr.readyState === XMLHttpRequest.DONE) {
                         if (xhr.status == 200) {

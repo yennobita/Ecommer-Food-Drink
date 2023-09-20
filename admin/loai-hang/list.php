@@ -68,13 +68,13 @@
         foreach ($items as $item) { ?>
             <ul class="prod_item">
                 <li><?= $item['ten_loai'] ?></li>
-                <li><a href="index.php?btn_edit&ma_loai=<?= $item['ma_loai'] ?>"><i class="fa-regular fa-pen-to-square"></i></a></li>
-                <li><a href="index.php?btn_delete&ma_loai=<?= $item['ma_loai'] ?>"><i class="fa-regular fa-trash-can"></i></a></li>
+                <li><a href="?btn_edit&ma_loai=<?= $item['ma_loai'] ?>"><i class="fa-regular fa-pen-to-square"></i></a></li>
+                <li><a href="?btn_delete&ma_loai=<?= $item['ma_loai'] ?>"><i class="fa-regular fa-trash-can"></i></a></li>
             </ul>
         <?php } ?>
     </div>
     <div class="row">
-        <a href="index.php" class="btn"><i class="fa-solid fa-plus"></i></a>
+        <a href="?new" class="btn"><i class="fa-solid fa-plus"></i></a>
     </div>
 </body>
 

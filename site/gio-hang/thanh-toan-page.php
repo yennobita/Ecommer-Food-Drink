@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="<?= $CONTENT_URL ?>/css/gio-hang.css">
     <link rel="stylesheet" href="<?= $CONTENT_URL ?>/css/thanh-toan.css">
     <link rel="stylesheet" href="<?= $CONTENT_URL ?>/css/success.css">
-    <title>Payment - TDK Store</title>
+    <title>Payment </title>
     <style>
         .address-form {
             flex: 0 0 70%;
@@ -86,7 +86,7 @@
                                             <img src="<?= $CONTENT_URL ?>/images/products/<?php echo $sp['hinh']; ?>" alt="">
                                         </div>
                                         <div class="payment-info">
-                                            <p class="itemNumber">#QUE-007544-002</p>
+                                            <p class="itemNumber"></p>
                                             <h3><?php echo $sp['ten_hh']; ?></h3>
                                             <div class="size">SIZE: <span><?php echo (($sp['size']) ? $sp['size'] : ''); ?></span></div>
                                             <p>
@@ -143,7 +143,9 @@
 
             </div>
             <div class="payment-left">
-                <?php
+            <?php
+
+            
                 $ma_kh = $_SESSION['user']['ma_kh'] ? $_SESSION['user']['ma_kh'] : '';
                 $ten_kh = $_SESSION['user']['ho_ten'] ? $_SESSION['user']['ho_ten'] : '';
                 $email = $_SESSION['user']['email'] ? $_SESSION['user']['email'] : '';
@@ -167,7 +169,7 @@
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <textarea name="dia_chi" id="" rows="4" class="form-control address-form" required placeholder="Ex: An Binh, Ninh Kieu, Can Tho..."></textarea>
+                        <textarea name="dia_chi" id="" rows="4" class="form-control address-form" required placeholder="Ex: Hai Chau, Da Nang..."></textarea>
                     </div>
                     <div class="form-group">
                         <label for="address">Note</label>
@@ -207,7 +209,7 @@
         }
         paymentBtn.onclick = () => {
             const xhr = new XMLHttpRequest(); // create new XML Object
-            xhr.open("POST", "../gio-hang/thanh-toan.php?buy", true);
+            xhr.open("POST", "./gio-hang/thanh-toan.php?buy", true);
             xhr.onload = () => {
                 if (xhr.readyState === XMLHttpRequest.DONE) {
                     if (xhr.status == 200) {

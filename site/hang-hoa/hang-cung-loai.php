@@ -5,7 +5,7 @@
         extract($hh)
     ?>
         <div class="grid-column prod-item">
-        <a href="index.php?chi-tiet&ma_hh=<?= $ma_hh ?>">
+        <a href="?chi-tiet&ma_hh=<?= $ma_hh ?>">
             <div class="prod-image">
                 <img src="<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>" />
                 <?php

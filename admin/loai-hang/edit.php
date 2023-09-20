@@ -42,7 +42,7 @@
         </form>
     </div>
     <div class="row">
-        <a href="index.php?btn_list" class="btn">List</a>
+        <a href="?btn_list" class="btn">List</a>
     </div>
 </body>
 

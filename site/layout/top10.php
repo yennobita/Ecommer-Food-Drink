@@ -9,13 +9,13 @@ ORDER BY so_luot_xem DESC LIMIT 0, 6";
 ?>
 <div class="prod-list carousel-list">
     <?php
-    require_once '../../dao/hang-hoa.php';
+    require_once '../../dao/hang-hoa.php'; //require_once => chỉ nhập tệp tin một lần duy nhất, ngay cả khi nó được gọi nhiều lần trong mã.
     $hh_array = hang_hoa_select_top10();
     foreach ($hh_array as $hh) {
         extract($hh)
     ?>
         <div class="prod-item carousel-items">
-            <a href="index.php?chi-tiet&ma_hh=<?= $ma_hh ?>">
+            <a href="?chi-tiet&ma_hh=<?= $ma_hh ?>">
                 <div class="prod-image">
                     <img src="<?= $CONTENT_URL ?>/images/products/<?= $hinh ?>" />
                     <?php

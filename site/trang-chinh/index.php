@@ -35,7 +35,7 @@
         require_once '../../dao/hang-hoa.php';
         $items_all = hang_hoa_select_all();
         $VIEW_NAME = "trang-chinh/san-pham.php";
-    } else if (exist_param("lien-he")) {
+    } else if (exist_param("lien-he")) { //kiểm tra xem tham số "lien-he" có tồn tại trong yêu cầu (request) hay không.
         $VIEW_NAME = "trang-chinh/lien-he.php";
     } else if (exist_param("chi-tiet")) {
         $VIEW_NAME = "../hang-hoa/chi-tiet.php";
